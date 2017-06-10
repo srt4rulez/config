@@ -2,7 +2,7 @@
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+    . ~/.bashrc
 fi
 
 # Aliases
@@ -15,7 +15,7 @@ alias resource='source ~/.bash_profile && echo "Done!"'
 # cd ~
 # wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 if [ -f ~/git-completion.bash ]; then
-	source ~/git-completion.bash
+    source ~/git-completion.bash
 fi
 
 # Git Prompt
@@ -23,7 +23,7 @@ fi
 # cd ~
 # wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 if [ -f ~/git-prompt.sh ]; then
-	source ~/git-prompt.sh
+    source ~/git-prompt.sh
 fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1                # '*'=unstaged, '+'=staged
@@ -31,7 +31,7 @@ export GIT_PS1_SHOWSTASHSTATE=1                # '$'=stashed
 export GIT_PS1_SHOWUNTRACKEDFILES=1            # '%'=untracked
 export GIT_PS1_SHOWUPSTREAM="verbose name git" # 'u='=no difference, 'u+1'=ahead by 1 commit
 
-export GIT_PS1_DESCRIBE_STYLE="branch"    
+export GIT_PS1_DESCRIBE_STYLE="branch"
 # detached HEAD style:
 #  contains      relative to newer annotated tag (v1.6.3.2~35)
 #  branch        relative to newer tag or branch (master~4)
@@ -53,7 +53,7 @@ __set_bash_prompt() {
     local postGitPS1=""
 
     if [[ $__colourise_prompt ]]; then
-	
+
         export GIT_PS1_SHOWCOLORHINTS=1
 
         # Wrap the colour codes between \[ and \], so that
@@ -69,19 +69,19 @@ __set_bash_prompt() {
 
         # Red if root
         if [[ ${EUID} == 0 ]]; then
-			preGitPS1+="$bRed\u$none: "
+            preGitPS1+="$bRed\u$none: "
         else
             preGitPS1+="$mag\u$none: "
         fi
 
         preGitPS1+="$blu\w $none"
-		
+
     else # No colour
-	
+
         # Sets prompt like: ravi@boxy:~/prj/sample_app
         unset GIT_PS1_SHOWCOLORHINTS
         preGitPS1="${debian_chroot:+($debian_chroot)}\u@\h:\w"
-		
+
     fi
 
     # Now build the part after git's status
