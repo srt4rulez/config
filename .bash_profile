@@ -7,8 +7,14 @@ fi
 
 # Aliases
 alias ll='ls -alFh'
-alias www='cd /opt/www'
 alias resource='source ~/.bash_profile && echo "Done!"'
+
+# reset filemode
+alias gitfilemode='git config --unset core.filemode'
+
+# Shortcuts
+alias www='cd /opt/www'
+alias lcs='ll /opt/www/conduit-server/conf-modules'
 
 # Git Completion
 # Install:
