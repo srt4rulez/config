@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # Aliases
-alias ll='ls -al'
+alias ll='ls -alFh'
 alias www='cd /opt/www'
 alias resource='source ~/.bash_profile && echo "Done!"'
 
