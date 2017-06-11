@@ -16,6 +16,14 @@ alias gitfilemode='git config --unset core.filemode'
 alias www='cd /opt/www'
 alias lcs='ll /opt/www/conduit-server/conf-modules'
 
+# WP CLI Completion
+# Install:
+# cd ~
+# wget https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash
+if [ -f ~/wp-completion.bash ]; then
+    source ~/wp-completion.bash
+fi
+
 # Git Completion
 # Install:
 # cd ~
