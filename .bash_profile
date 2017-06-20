@@ -43,7 +43,7 @@ fi
 export GIT_PS1_SHOWDIRTYSTATE=1                # '*'=unstaged, '+'=staged
 export GIT_PS1_SHOWSTASHSTATE=1                # '$'=stashed
 export GIT_PS1_SHOWUNTRACKEDFILES=1            # '%'=untracked
-export GIT_PS1_SHOWUPSTREAM="verbose name git" # 'u='=no difference, 'u+1'=ahead by 1 commit
+export GIT_PS1_SHOWUPSTREAM="verbose"          # 'u='=no difference, 'u+1'=ahead by 1 commit
 
 export GIT_PS1_DESCRIBE_STYLE="branch"
 # detached HEAD style:
