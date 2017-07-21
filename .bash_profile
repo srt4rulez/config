@@ -15,6 +15,7 @@ alias gitfilemode='git config --unset core.filemode'
 # Shortcuts
 alias www='cd /opt/www'
 alias cdcs='cd /opt/www/conduit-server/conf-modules'
+alias llcs='ll /opt/www/conduit-server/conf-modules'
 
 # WP CLI Completion
 # Install:
