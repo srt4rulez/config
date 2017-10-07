@@ -125,6 +125,6 @@ __set_bash_prompt() {
 # need because __git_ps1 will return different text and colors
 PROMPT_COMMAND=__set_bash_prompt
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:$HOME/.composer/vendor/bin
 
 export PATH
