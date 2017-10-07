@@ -17,6 +17,14 @@ alias www='cd /opt/www'
 alias cdcs='cd /opt/www/conduit-server/conf-modules'
 alias llcs='ll /opt/www/conduit-server/conf-modules'
 
+# Exercism Completion
+# Install:
+# cd ~
+# wget http://cli.exercism.io/exercism_completion.bash
+if [ -f ~/exercism_completion.bash ]; then
+    source ~/exercism_completion.bash
+fi
+
 # WP CLI Completion
 # Install:
 # cd ~
