@@ -128,3 +128,6 @@ PROMPT_COMMAND=__set_bash_prompt
 PATH=$PATH:$HOME/bin:$HOME/.composer/vendor/bin
 
 export PATH
+
+# Colors for ls
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
