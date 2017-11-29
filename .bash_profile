@@ -16,6 +16,7 @@ alias gitfilemode='git config --unset core.filemode'
 alias www='cd /opt/www'
 alias cdcs='cd /opt/www/conduit-server/conf-modules'
 alias llcs='ll /opt/www/conduit-server/conf-modules'
+alias pub='cd ~/public_html'
 
 # Exercism Completion
 # Install:
