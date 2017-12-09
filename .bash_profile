@@ -93,9 +93,9 @@ __set_bash_prompt() {
 
         # Red if root
         if [[ ${EUID} == 0 ]]; then
-            preGitPS1+="$bRed\u$none: "
+            preGitPS1+="$bRed\u$yel@$mag\h$none: "
         else
-            preGitPS1+="$mag\u$none: "
+            preGitPS1+="$mag\u$yel@$mag\h$none: "
         fi
 
         preGitPS1+="$blu\w $none"
