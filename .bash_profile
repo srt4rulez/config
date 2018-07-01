@@ -132,3 +132,5 @@ export PATH
 
 # Colors for ls
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
+
+export VAGRANT_DEFAULT_PROVIDER=hyperv
