@@ -38,6 +38,9 @@ fi
 # Install:
 # cd ~
 # wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+# NOTE: You may want to download the git-completion of your current git version (run git --version):
+# eg: https://raw.githubusercontent.com/git/git/v2.17.2/contrib/completion/git-completion.bash
+# See https://apple.stackexchange.com/a/328144
 if [ -f ~/git-completion.bash ]; then
     source ~/git-completion.bash
 fi
