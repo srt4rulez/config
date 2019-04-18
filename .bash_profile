@@ -8,6 +8,7 @@ fi
 # Aliases
 alias ll='ls -alFh'
 alias resource='source ~/.bash_profile && echo "Done!"'
+alias phpdebug='php -dxdebug.remote_autostart=1 -dxdebug.remote_host=192.168.1.149'
 
 # reset filemode
 alias gitfilemode='git config --unset core.filemode'
@@ -16,7 +17,6 @@ alias gitfilemode='git config --unset core.filemode'
 alias www='cd /opt/www'
 alias cdcs='cd /opt/www/conduit-server/conf-modules'
 alias llcs='ll /opt/www/conduit-server/conf-modules'
-alias pub='cd ~/public_html'
 
 # Exercism Completion
 # Install:
@@ -24,14 +24,6 @@ alias pub='cd ~/public_html'
 # wget http://cli.exercism.io/exercism_completion.bash
 if [ -f ~/exercism_completion.bash ]; then
     source ~/exercism_completion.bash
-fi
-
-# WP CLI Completion
-# Install:
-# cd ~
-# wget https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash
-if [ -f ~/wp-completion.bash ]; then
-    source ~/wp-completion.bash
 fi
 
 # Git Completion
@@ -135,5 +127,3 @@ export PATH
 
 # Colors for ls
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
-
-export VAGRANT_DEFAULT_PROVIDER=hyperv
