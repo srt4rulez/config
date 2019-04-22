@@ -45,10 +45,6 @@ if [ -f ~/git-prompt.sh ]; then
     source ~/git-prompt.sh
 fi
 
-# Symfony Console Autocomplete
-# https://github.com/bamarni/symfony-console-autocomplete
-eval "$(symfony-autocomplete)"
-
 export GIT_PS1_SHOWDIRTYSTATE=1                # '*'=unstaged, '+'=staged
 export GIT_PS1_SHOWSTASHSTATE=1                # '$'=stashed
 export GIT_PS1_SHOWUNTRACKEDFILES=1            # '%'=untracked
@@ -128,6 +124,10 @@ PROMPT_COMMAND=__set_bash_prompt
 PATH=$PATH:$HOME/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/vendor/bin:$HOME/.yarn/bin
 
 export PATH
+
+# Symfony Console Autocomplete
+# https://github.com/bamarni/symfony-console-autocomplete
+eval "$(symfony-autocomplete)"
 
 # Colors for ls
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
