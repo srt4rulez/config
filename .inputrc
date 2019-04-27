@@ -1,0 +1,9 @@
+# Include system wide settings which are ignored
+# by default if one has their own .inputrc
+$include /etc/inputrc
+
+# Enable coloring for tab completions with bash >= 4.3
+set colored-stats on
+
+# ctrl+space to expand an alias
+"\C-@": alias-expand-line
