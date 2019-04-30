@@ -9,6 +9,7 @@ fi
 alias ll='ls -alFh'
 alias resource='source ~/.bash_profile && echo "Done!"'
 alias phpdebug='php -dxdebug.remote_autostart=1 -dxdebug.remote_host=192.168.1.149'
+alias sshinit='eval `ssh-agent` && ssh-add'
 
 # reset filemode
 alias gitfilemode='git config --unset core.filemode'
