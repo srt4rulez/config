@@ -8,16 +8,16 @@ fi
 # Aliases
 alias ll='ls -alFh'
 alias resource='source ~/.bash_profile && echo "Done!"'
-alias phpdebug='php -dxdebug.remote_autostart=1 -dxdebug.remote_host=192.168.1.149'
 alias sshinit='eval `ssh-agent` && ssh-add'
-
-# reset filemode
-alias gitfilemode='git config --unset core.filemode'
+alias xresetgitfilemode='git config --unset core.filemode'
+alias xgitfilemode='git config core.filemode false'
 
 # Shortcuts
 alias www='cd /opt/www'
-alias cdcs='cd /opt/www/conduit-server/conf-modules'
-alias llcs='ll /opt/www/conduit-server/conf-modules'
+
+# System shortcuts
+alias xhttpd='sudo systemctl restart httpd || sudo service httpd restart'
+alias xfpm='sudo systemctl restart php-fpm || sudo service php-fpm restart'
 
 # Exercism Completion
 # Install:
@@ -125,10 +125,6 @@ PROMPT_COMMAND=__set_bash_prompt
 PATH=$PATH:$HOME/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/vendor/bin:$HOME/.yarn/bin
 
 export PATH
-
-# Symfony Console Autocomplete
-# https://github.com/bamarni/symfony-console-autocomplete
-eval "$(symfony-autocomplete)"
 
 # Colors for ls
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
